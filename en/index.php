@@ -213,7 +213,8 @@ $_SESSION['captcha'] = simple_php_captcha();
       </div> <!--end row -->
    </section> <!-- Services Section End -->
 
-
+   <section class="module parallax parallax-0"> </section>
+   
    <!-- events -->
    <section id="events">
 

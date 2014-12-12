@@ -1,7 +1,7 @@
 <?php
 require_once "inc/database.php";
 require_once "inc/dragonPreload.php";
-
+$_SESSION = array();
 $_SESSION['captcha'] = simple_php_captcha();
 
     //get events data
@@ -31,8 +31,8 @@ $_SESSION['captcha'] = simple_php_captcha();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="nautica, bar, hvar, croatia, events, concerts, klub, hrvatska" />
-	<meta name="description" content="Nautica Bar is the finest club/bar in Hvar, Croatia">
-	<meta name="author" content="Nautica Bar">
+  	<meta name="description" content="Nautica Bar is the finest club/bar in Hvar, Croatia">
+  	<meta name="author" content="Nautica Bar">
     <meta property="og:title" content="Club/bar in Hvar, Croatia" />
     <meta property="og:site_name" content="Nautica Bar" />
     <meta property="og:url" content="http://www.nautica-bar.com/" />
@@ -45,8 +45,8 @@ $_SESSION['captcha'] = simple_php_captcha();
     <link rel="shortcut icon" href="favicon.png" >
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/layout.css">
+  	<link rel="stylesheet" href="css/base.css">
+  	<link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/animate.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -213,6 +213,7 @@ $_SESSION['captcha'] = simple_php_captcha();
       </div> <!--end row -->
    </section> <!-- Services Section End -->
 
+   <section class="module parallax parallax-0"> </section>
 
    <!-- events -->
    <section id="events">
