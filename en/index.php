@@ -48,9 +48,12 @@ $_SESSION['captcha'] = simple_php_captcha();
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
     <script src="../js/modernizr.js"></script>
     <script src="../js/jssor.js"></script>
     <script src="../js/jssor.slider.js"></script>
@@ -501,6 +504,57 @@ $_SESSION['captcha'] = simple_php_captcha();
       </div> <!-- cd-testimonials-all -->
    </section> <!-- About Section End-->
 
+       <section id="hvar-images">
+           <div class="row section-head">
+               <div class="col full">
+                   <h2>City of Hvar</h2>
+                   <p class="desc">Explore the natural beauty of Hvar and visit us!</p>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col g-3">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica1.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica1.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+               <div class="col g-3">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica2.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica2.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+               <div class="col g-3">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica3.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica3.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+               <div class="col g-3">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica4.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica4.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+           </div> <!-- end row -->
+           <br>
+           <div class="row">
+               <div class="col g-4">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica5.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica5.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+               <div class="col g-4">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica6.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica6.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+               <div class="col g-4">
+                   <a class="fancybox thumbnail" rel="location_hvar_nautica1" href="../images/hvar/location_hvar_nautica7.jpg">
+                       <img class="img-responsive lazy" src="../images/hvar/location_hvar_nautica7.jpg" alt="Nauticaa@Hvar">
+                   </a>
+               </div>
+           </div> <!-- end row -->
+           <br><br>
+       </section>  <!-- Hvar Images section End-->
+
    <section id="map">
       <p class="map-error">Turn on JavaScript in your internet browser to see the map, thank you for your understanding.</p>
    </section> <!-- Map Section End-->
@@ -624,7 +678,7 @@ $_SESSION['captcha'] = simple_php_captcha();
     </div> <!-- /ip-main -->
 </div> <!-- /container -->
    <script src="../js/jquery.viewportchecker.js"></script>
-   <script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="../js/jquery-migrate-1.2.1.min.js"></script>
    <script src="../js/jquery.iframetracker.js"></script>
    <script src="../js/scrollspy.js"></script>
    <script src="../js/jquery.flexslider.js"></script>
@@ -638,5 +692,6 @@ $_SESSION['captcha'] = simple_php_captcha();
    <script src="../js/classie.js"></script>
    <script src="../js/pathLoader.js"></script>
    <script src="../js/preloader_main.js"></script>
+   <script src="../js/jquery.lazyload.min.js"></script>
 </body>
 </html>
