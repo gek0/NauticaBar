@@ -33,6 +33,8 @@ if($session->session_test() === true)
     $eventGallery = false;
 
     if($_SERVER["REQUEST_METHOD"] == 'POST'){
+        set_time_limit(0);  //prevent request timeout
+
         //clean name and use for images name
         $event_name = safe_name($eventData['name']);
         $event_id = (int)$eventData['id'];

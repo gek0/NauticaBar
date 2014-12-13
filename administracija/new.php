@@ -15,6 +15,8 @@ if($session->session_test() === true)
     $eventNames[] = $events->getEventsNames();
 
     if($_SERVER["REQUEST_METHOD"] == 'POST'){
+        set_time_limit(0);  //prevent request timeout
+
         $valid_action_status = array("yes", "no");
 
         if(empty($_POST["name"]) || $_FILES['cover']['size'] == 0)
