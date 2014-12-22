@@ -49,8 +49,8 @@ require_once "inc/database.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="nautica, bar, hvar, croatia, events, concerts" />
-	<meta name="description" content="Nautica Bar is the finest club/bar in Hvar, Croatia">
-	<meta name="author" content="Nautica Bar">
+	  <meta name="description" content="Nautica Bar is the finest club/bar in Hvar, Croatia">
+	  <meta name="author" content="Nautica Bar">
     <meta property="og:title" content="Club/bar in Hvar, Croatia" />
     <meta property="og:site_name" content="Nautica Bar" />
     <meta property="og:url" content="http://www.nautica-bar.com/" />
@@ -63,8 +63,8 @@ require_once "inc/database.php";
     <link rel="shortcut icon" href="favicon.png" >
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/layout.css">
+	  <link rel="stylesheet" href="css/base.css">
+	  <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animsition.min.css">
 
@@ -122,7 +122,7 @@ require_once "inc/database.php";
                            {
                                 echo "<li>
                                         <figure>
-                                            <img class='lazy' src='".$eventGallery[$i]['file_location'].$eventGallery[$i]['file_name']."' alt='".imageAlt($eventGallery[$i]['file_name'])."' />
+                                            <img class='lazy_gal' src='".$eventGallery[$i]['file_location'].$eventGallery[$i]['file_name']."' alt='".imageAlt($eventGallery[$i]['file_name'])."' />
                                         </figure>
                                       </li>";
                            }
@@ -136,7 +136,7 @@ require_once "inc/database.php";
                            {
                                echo "<li>
                                         <figure>
-                                            <img class='lazy borderedGallery' src='".$eventGallery[$i]['file_location'].$eventGallery[$i]['file_name']."' alt='".imageAlt($eventGallery[$i]['file_name'])."' />
+                                            <img class='lazy_gal borderedGallery' src='".$eventGallery[$i]['file_location'].$eventGallery[$i]['file_name']."' alt='".imageAlt($eventGallery[$i]['file_name'])."' />
                                         </figure>
                                      </li>";
                            }
@@ -242,6 +242,10 @@ require_once "inc/database.php";
            $('img#villa_skansi').mouseleave(function() {
                $('img#villa_skansi').css("right", "-25px");
            });
+
+           $(".lazy_gal").lazyload({
+                effect : "fadeIn"
+            });
        });
    </script>
 </div> <!-- end animsition -->

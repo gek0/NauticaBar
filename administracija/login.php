@@ -28,7 +28,6 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 		$login = $users->login($username, $password, $ip);
 
 		if($login === false){
-			die("wat");
             //set failed login for IP ban
             $failedLogin = $users->getFailedLogin($ip);
 
