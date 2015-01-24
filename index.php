@@ -654,7 +654,7 @@ $_SESSION['captcha'] = simple_php_captcha();
          <div class="col g-7">
             <ul class="copyright">
                <li>&copy; <?php echo date('Y'); ?> Nautica Bar</li>
-               <li>Design &amp; code by <span class="copyright-span">Matija Buriša</span></li>
+               <li>Design &amp; code by <span class="copyright-span"><a href="https://github.com/gek0">Matija Buriša</a></span></li>
             </ul>
          </div>
 
